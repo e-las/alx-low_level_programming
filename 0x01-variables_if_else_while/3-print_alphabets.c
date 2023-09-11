@@ -1,21 +1,19 @@
 #include <stdio.h>
 /**
  * main - this is where the execution of the program starts
- * return: each time 0
+ * Return: each time 0
  */
-int main()
+int main(void)
 {
 	char alphabets;
-	
+
 	for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
 	{
-	
 		putchar(alphabets);
 	}
 
 	for (alphabets = 'A'; alphabets <= 'Z'; alphabets++)
 	{
-	
 		putchar(alphabets);
 	}
 	putchar('\n');

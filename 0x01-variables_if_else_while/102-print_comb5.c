@@ -6,18 +6,18 @@
  */
 int main(void)
 {
-	int i, x;
+	int x, y;
 
-	for (i = '0'; i < '9'; i++)
+	for (x = 0; x <= 98; x++)
 	{
-		for (x = i + 1; x <= '9'; x++)
+		for (y = x + 1; y <= 99; y++)
 		{
-			if (x != i)
-			{
-				putchar(i);
-				putchar(x);
-			}
-			if (i == '8' && x == '9')
+			putchar((x / 10) + '0');
+			putchar((x % 10) + '0');
+			putchar(' ');
+			putchar((y / 10) + '0');
+			putchar((y % 10) + '0');
+			if (x == 98 && y == 99)
 				continue;
 			putchar(',');
 			putchar(' ');

@@ -3,16 +3,17 @@
 #include <time.h>
 /**
  * main - this is where your program execution start
- * return: each time 0
+ * Return: each time 0
  */
-int main()
+int main(void)
 {
 	char alphabet, e, q;
+
 	e = 'e';
 	q = 'q';
 
 	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-	
+
 	if (alphabet != e && alphabet != q)
 	putchar(alphabet);
 

@@ -3,12 +3,14 @@
 #include <stdio.h>
 /**
  * main - this is where the execution of the program start that starting point
- * return: always 0 (success)
+ * Return: always 0 (success)
  */
-int main()
+int main(void)
 {
 	int n;
+
 	srand(time(0));
+
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 		printf("%d is positive\n", n);

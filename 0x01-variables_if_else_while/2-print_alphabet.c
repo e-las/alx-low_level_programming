@@ -1,12 +1,14 @@
 #include <stdio.h>
 /**
  * main - this is the execution of the program start
- * return: each time 0
+ * Return: each time 0
  */
-int main()
+int main(void)
 {
 	char u;
+
 	u = 'a';
+
 	while
 		(u <= 'z')
 		{

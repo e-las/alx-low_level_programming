@@ -2,17 +2,17 @@
 #include <stdlib.h>
 /**
  * main - this is where your program execution start
- * return: each time 0
+ * Return: each time 0
  */
-int main()
+int main(void)
 {
-        int m;
+	int m;
 
-        for (m = '0'; m <= '9'; m++)
+	for (m = '0'; m <= '9'; m++)
 
-        putchar(m);
+	putchar(m);
 
-        putchar('\n');
-        return (0);
+	putchar('\n');
+	return (0);
 }
 

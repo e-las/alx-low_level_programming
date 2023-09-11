@@ -3,12 +3,13 @@
 #include <stdio.h>
 /**
  * main - this is where the execution of the program start
- * return: each time 0
+ * Return: each time 0
  */
-int main()
+int main(void)
 {
 	int n;
 	int u;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	u = n % 10;
