@@ -7,36 +7,36 @@
  */
 int _atoi(char *s)
 {
-	int x, d, n, len, f, digit;
+	int k, p, m, len, x, numbe;
 
+	k = 0;
+	p = 0;
+	m = 0;
 	x = 0;
-	d = 0;
-	n = 0;
-	f = 0;
 	len = 0;
-	digit = 0;
+	numbe = 0;
 
 	while (s[len] != '\0')
 		len++;
-	while (x < len && f == 0)
+	while (k < len && x == 0)
 	{
-		if (s[x] == '_')
-			++d;
-		if (s[x] >= '0' && s[x] <= '9')
+		if (s[k] == '-')
+			++p;
+		if (s[k] >= '0' && s[k] <= '9')
 		{
-			digit = s[x] - '0';
-			if (d % 2)
-				digit = -digit;
-			n = n * 10 + digit;
-			f = 1;
-			if (s[x + 1] < '0' || s[x + 1] > '9')
+			numbe = s[k] - '0';
+			if (p % 2)
+				numbe = -numbe;
+			m = m * 10 + numbe;
+			x = 1;
+			if (s[k + 1] < '0' || s[k + 1] > '9')
 				break;
-			f = 0;
+			x = 0;
 		}
-		x++;
+		k++;
 	}
-	if (f == 0)
+	if (x == 0)
 		return (0);
-	return (n);
+	return (m);
 }
 
